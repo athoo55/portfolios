@@ -726,7 +726,7 @@ footer img{
 }
 
   .slideshow-container {
-    width: 1000px;
+   max-width: 1000px;
     position: relative;
     margin-left: 22%;
     margin-top: 5%;
