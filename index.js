@@ -1,16 +1,32 @@
 
     feather.replace();
-    $(document).ready(function() {
-        $('.circle-container').find('a').click(function(event) {
-          event.preventDefault();
-        });
-        $('.circle-container').find('li').hover(function() {
-          $('.circle-container').find('li').removeClass('active');
-          $(this).addClass('active');
-          $('.services-container').find('li.active').removeClass('active animated fadeIn');
-      
-          $(".services-container").find('li').eq($(this).data('id')).addClass('active animated fadeIn');
-      
-        });
-      
-      });
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";  
+    }
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
