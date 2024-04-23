@@ -5,11 +5,10 @@
     font-family: 'proper', sans-serif;
 }
 body{
-    background: linear-gradient(30deg,#84bcac,#8dbfe6,#85d1eb,#e277df);
+    background: linear-gradient(80deg,#bc84a9,#8dbfe6,#85d1eb,#e277df,rgba(45, 57, 63, 0.979));
     background-size: 1000% 1000%;
-    animation: gradient-animation  20s linear infinite;
-    -webkit-animation: gradient-animation 20s linear infinite;
-    -moz-animation:gradient-animation 20s linear infinite;
+    animation: gradient-animation  20s  infinite;
+ 
   }
   
   @keyframes gradient-animation {
@@ -47,7 +46,7 @@ display: block;
 
 text-decoration:none;
 padding:5px;
-font-size:18px;
+font-size:27px;
 font-family: sans-serif;
 color:#fff;
 text-transform:uppercase;
@@ -81,13 +80,13 @@ z-index:-1;
   padding: 10px;
 }
 .nav-img img{
-   width: 8%;
+   width: 12%;
   padding: 5px;
 }
 .nav-img h3{
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   margin-left: 10px;
   color:white;
 }
@@ -107,13 +106,9 @@ z-index:-1;
     background-size: 420% 420%;
     animation: gradient-animation 7s ease infinite;
     height: 100vh;
-    /* margin-top: -2.8rem; */
+    
     
 }
-/* responsive */
-
-
-
  .home-img img{
     display: flex;
     justify-content: flex-start;
@@ -199,7 +194,7 @@ z-index:-1;
 
 .home-content h3{
   color: rgba(255, 255, 255, 0.822);
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 700;
 }
 .home-content h3 span{
@@ -352,7 +347,6 @@ footer::after{
     transition:.5s ;
     /* background-color: #9dbadf4d; */
 }
-
 .skills-content::before{
     content: '';
     position: absolute;
@@ -563,7 +557,7 @@ footer img{
     max-width: 700px;
     min-height: auto;
     padding-bottom: 7rem; 
-    margin-left: 18%;
+    margin-left: 25%;
   }
   
 .title-card{
@@ -759,8 +753,8 @@ footer img{
   /* Caption text */
   .text {
     color: #030303f3;
-    font-size: 20px;
-    padding: 8px 12px;
+    font-size: 15px;
+    padding: 7px 8px;
     position: absolute;
     bottom: 8px;
     width: 100%;
@@ -876,7 +870,7 @@ max-width: 200px;
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
-    margin-left: 150px;
+    margin-left: 65%;
 
  
   }
